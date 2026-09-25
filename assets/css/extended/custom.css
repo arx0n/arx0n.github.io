@@ -1,0 +1,832 @@
+/* =========================================
+   ARX0N — Pure Black / Purple Cyber
+   ========================================= */
+
+:root {
+    --theme: #000000;
+    --entry: #080808;
+
+    --primary: #f5f5f5;
+    --secondary: #888888;
+    --tertiary: #21182b;
+    --content: #d4d4d4;
+    --border: #18121f;
+
+    --purple: #bd93f9;
+    --purple-light: #d6b8ff;
+    --purple-dark: #8b5cf6;
+}
+
+.dark {
+    --theme: #000000;
+    --entry: #080808;
+
+    --primary: #f5f5f5;
+    --secondary: #888888;
+    --tertiary: #21182b;
+    --content: #d4d4d4;
+    --border: #18121f;
+}
+
+
+/* =========================================
+   FONDO
+   ========================================= */
+
+html,
+body {
+    background: #000000 !important;
+}
+
+body {
+    color: #d4d4d4;
+}
+
+
+/* =========================================
+   QUITAR CAMBIO DE TEMA
+   ========================================= */
+
+#theme-toggle {
+    display: none !important;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    background: #000000 !important;
+    border-bottom: 1px solid #0f0f0f;
+}
+
+.logo a {
+    color: #f5f5f5;
+    font-weight: 700;
+}
+
+.logo a:hover {
+    color: #bd93f9;
+}
+
+
+/* =========================================
+   MENU
+   ========================================= */
+
+#menu a {
+    color: #888888;
+
+    transition:
+        color 0.2s ease;
+}
+
+#menu a:hover {
+    color: #bd93f9;
+}
+
+
+/* =========================================
+   PERFIL
+   ========================================= */
+
+.profile::before {
+    display: none !important;
+}
+
+.profile {
+    background: transparent !important;
+}
+
+.profile_inner {
+    animation: arxonFadeIn 0.7s ease;
+}
+
+
+/* =========================================
+   FOTO
+   ========================================= */
+
+.profile img {
+    border-radius: 50%;
+
+    border: none !important;
+
+    box-shadow: none !important;
+
+    background: transparent !important;
+
+    transition:
+        transform 0.25s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.03);
+
+    border: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =========================================
+   NOMBRE
+   ========================================= */
+
+.profile .profile_inner h1 {
+    color: #f5f5f5;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================
+   SUBTITULO
+   ========================================= */
+
+.profile .profile_inner > span {
+    color: #888888;
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================
+   SOCIAL
+   ========================================= */
+
+.social-icons a {
+    color: #777777;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #bd93f9;
+
+    transform: translateY(-3px);
+
+    filter:
+        drop-shadow(
+            0 0 5px rgba(189, 147, 249, 0.35)
+        );
+}
+
+
+/* =========================================
+   BOTONES — BLACK / DARK PURPLE AURA
+   ========================================= */
+
+.profile .buttons {
+    margin-top: 28px;
+    gap: 14px;
+}
+
+.profile .button {
+    background: #000000;
+
+    color: #e8e8e8;
+
+    border: 1px solid #161616;
+
+    border-radius: 8px;
+
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.profile .button:hover {
+    background: #000000;
+
+    color: #ffffff;
+
+    border-color: #7048a0;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 8px rgba(112, 72, 160, 0.55),
+        0 0 20px rgba(112, 72, 160, 0.32),
+        0 0 40px rgba(82, 45, 125, 0.18);
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a:hover {
+    color: #bd93f9;
+}
+
+
+/* =========================================
+   POSTS
+   ========================================= */
+
+.post-entry {
+    background: #080808;
+
+    border: 1px solid #151515;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+
+    border-color: #3a2948;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   CODE
+   ========================================= */
+
+code {
+    background: #080808;
+
+    color: #d6b8ff;
+
+    border: 1px solid #21182b;
+
+    border-radius: 5px;
+}
+
+pre {
+    background: #050505 !important;
+
+    border: 1px solid #151515;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   SELECCIÓN
+   ========================================= */
+
+::selection {
+    background: #8b5cf6;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   SCROLLBAR
+   ========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #21182b;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    color: #555555;
+}
+
+.footer a {
+    color: #777777;
+}
+
+.footer a:hover {
+    color: #bd93f9;
+}
+
+
+/* =========================================
+   ANIMACIÓN
+   ========================================= */
+
+@keyframes arxonFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .profile_inner {
+        animation: none;
+    }
+
+    .profile img,
+    .profile .button,
+    .post-entry {
+        transition: none;
+    }
+}
+
+
+/* =========================================
+   QUITAR # DE LOS TITULOS AL PASAR EL RATON
+   ========================================= */
+
+.post-content h1 a,
+.post-content h2 a,
+.post-content h3 a,
+.post-content h4 a,
+.post-content h5 a,
+.post-content h6 a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.post-content h1 a::after,
+.post-content h2 a::after,
+.post-content h3 a::after,
+.post-content h4 a::after,
+.post-content h5 a::after,
+.post-content h6 a::after {
+    display: none !important;
+}
+
+
+/* =========================================
+   OCULTAR # DE LOS TITULOS
+   ========================================= */
+
+.post-content .anchor {
+    display: none !important;
+}
+
+
+/* =========================================
+   SUBTITULO — RESPONSIVE
+   ========================================= */
+
+@media (min-width: 769px) {
+
+    .profile .profile_inner > span {
+        max-width: 1100px;
+        white-space: nowrap;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .profile .profile_inner > span {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================================
+   ARX0N — TYPEWRITER
+   ========================================= */
+
+.profile .profile_inner h1 {
+    font-size: 0 !important;
+    height: 38px;
+    margin: 16px 0 0;
+}
+
+.profile .profile_inner h1::after {
+    content: var(--typewriter-text);
+
+    display: inline-block;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    font-family:
+        "JetBrains Mono",
+        "Fira Code",
+        "Cascadia Code",
+        monospace;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    letter-spacing: -0.5px;
+
+    color: #bd93f9;
+
+    text-shadow:
+        0 0 12px rgba(189, 147, 249, 0.22);
+
+    border-right: 3px solid #bd93f9;
+
+    width: 0;
+
+    animation:
+        arxonTyping 10s steps(var(--typewriter-steps), end) infinite,
+        arxonCursor 10s steps(1, end) infinite;
+}
+
+
+/* =========================================
+   ESCRIBIR → PAUSA → BORRAR → PAUSA
+   ========================================= */
+
+@keyframes arxonTyping {
+
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: var(--typewriter-chars);
+    }
+
+    50% {
+        width: var(--typewriter-chars);
+    }
+
+    75% {
+        width: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+
+/* =========================================
+   CURSOR
+   ========================================= */
+
+@keyframes arxonCursor {
+
+    0%,
+    25% {
+        border-color: #bd93f9;
+    }
+
+    25% {
+        border-color: transparent;
+    }
+
+    31.25% {
+        border-color: #bd93f9;
+    }
+
+    37.5% {
+        border-color: transparent;
+    }
+
+    43.75% {
+        border-color: #bd93f9;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    50%,
+    75% {
+        border-color: #bd93f9;
+    }
+
+    75% {
+        border-color: transparent;
+    }
+
+    81.25% {
+        border-color: #bd93f9;
+    }
+
+    87.5% {
+        border-color: transparent;
+    }
+
+    93.75% {
+        border-color: #bd93f9;
+    }
+
+    100% {
+        border-color: #bd93f9;
+    }
+}
+
+
+/* =========================================
+   ESPAÑOL
+   ========================================= */
+
+html[lang^="es"] {
+    --typewriter-text: "sudo hazme un bocatalomo";
+    --typewriter-chars: 26ch;
+    --typewriter-steps: 26;
+}
+
+
+/* =========================================
+   INGLÉS
+   ========================================= */
+
+html[lang^="en"] {
+    --typewriter-text: "sudo make me a sandwich";
+    --typewriter-chars: 25ch;
+    --typewriter-steps: 25;
+}
+
+
+/* =========================================
+   FALLBACK
+   ========================================= */
+
+html:not([lang^="es"]):not([lang^="en"]) {
+    --typewriter-text: "sudo make me a sandwich";
+    --typewriter-chars: 25ch;
+    --typewriter-steps: 25;
+}
+
+
+/* =========================================
+   MÓVIL
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .profile .profile_inner h1 {
+        height: 32px;
+    }
+
+    .profile .profile_inner h1::after {
+        font-size: 18px;
+        border-right-width: 2px;
+    }
+
+}
+
+
+/* =================================
+   PROFILE BUTTONS - ONE ROW
+   ================================= */
+
+.profile .buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile .buttons a {
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   OCULTAR TRADUCCIONES DE PAPERMod
+   ========================================= */
+
+.post-lang {
+    display: none !important;
+}
+
+
+/* =========================================
+   HTB — WRITEUP CARDS
+   ========================================= */
+
+.post-content a[href*="/hack-the-box/"] {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 320px;
+    margin: 10px 10px 20px 0;
+
+    color: #e8e8e8;
+    text-decoration: none;
+
+    border: 1px solid #241b2d;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: #050505;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.post-content a[href*="/hack-the-box/"] img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+
+    border-radius: 0;
+}
+
+.post-content a[href*="/hack-the-box/"] strong {
+    display: block;
+
+    width: 100%;
+    padding: 10px 0 12px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #d8d8d8;
+}
+
+
+/* =========================================
+   HTB — CARD HOVER VERDE
+   ========================================= */
+
+.post-content a[href*="/hack-the-box/"]:hover {
+    color: #ffffff;
+
+    border-color: #9fef00;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 6px rgba(159, 239, 0, 0.35),
+        0 0 16px rgba(159, 239, 0, 0.12);
+}
+
+.post-content a[href*="/hack-the-box/"]:hover strong {
+    color: #9fef00;
+}
+
+
+/* =========================================
+   SOBRE MÍ — LILA
+   ========================================= */
+
+body:has(a[href*="/about/"]) .post-content h1,
+body:has(a[href*="/about/"]) .post-content h2,
+body:has(a[href*="/about/"]) .post-content h3 {
+    color: #bd93f9 !important;
+
+    text-shadow:
+        0 0 12px rgba(189, 147, 249, 0.18);
+}
+
+body:has(a[href*="/about/"]) .post-content h2 {
+    border-bottom: 1px solid rgba(189, 147, 249, 0.25);
+    padding-bottom: 6px;
+}
+
+
+/* =========================================
+   HACK THE BOX — VERDE
+   ========================================= */
+
+body:has(a[href*="/hack-the-box/"]) .post-content h1,
+body:has(a[href*="/hack-the-box/"]) .post-content h2,
+body:has(a[href*="/hack-the-box/"]) .post-content h3 {
+    color: #9fef00 !important;
+
+    text-shadow:
+        0 0 12px rgba(159, 239, 0, 0.18);
+}
+
+body:has(a[href*="/hack-the-box/"]) .post-content h2 {
+    border-bottom: 1px solid rgba(159, 239, 0, 0.25);
+    padding-bottom: 6px;
+}
+
+body:has(a[href*="/hack-the-box/"]) .post-content a img {
+    border: 1px solid #9fef00;
+
+    box-shadow:
+        0 0 10px rgba(159, 239, 0, 0.12);
+}
+
+
+/* =========================================
+   TRYHACKME — ROJO
+   ========================================= */
+
+body:has(a[href*="/tryhackme/"]) .post-content h1,
+body:has(a[href*="/tryhackme/"]) .post-content h2,
+body:has(a[href*="/tryhackme/"]) .post-content h3 {
+    color: #ff4655 !important;
+
+    text-shadow:
+        0 0 12px rgba(255, 70, 85, 0.18);
+}
+
+body:has(a[href*="/tryhackme/"]) .post-content h2 {
+    border-bottom: 1px solid rgba(255, 70, 85, 0.25);
+    padding-bottom: 6px;
+}
+
+body:has(a[href*="/tryhackme/"]) .post-content a img {
+    border: 1px solid #ff4655;
+
+    box-shadow:
+        0 0 10px rgba(255, 70, 85, 0.12);
+}
+
+
+/* =========================================
+   RESOURCES — AZUL
+   ========================================= */
+
+body:has(a[href*="/resources/"]) .post-content h1,
+body:has(a[href*="/resources/"]) .post-content h2,
+body:has(a[href*="/resources/"]) .post-content h3 {
+    color: #5dade2 !important;
+
+    text-shadow:
+        0 0 12px rgba(93, 173, 226, 0.18);
+}
+
+body:has(a[href*="/resources/"]) .post-content h2 {
+    border-bottom: 1px solid rgba(93, 173, 226, 0.25);
+    padding-bottom: 6px;
+}
+
+body:has(a[href*="/resources/"]) .post-content a img {
+    border: 1px solid #5dade2;
+
+    box-shadow:
+        0 0 10px rgba(93, 173, 226, 0.12);
+}
+
+/* =========================================
+   HACK THE BOX - WRITEUPS
+   ========================================= */
+
+/* Desplegables */
+details summary {
+    color: #9fef00;
+}
+
+details summary:hover {
+    color: #b8ff33;
+}
+
+/* Código inline */
+.post-content code {
+    color: #9fef00;
+}
+
+/* Fondo del código inline */
+.post-content code:not(pre code) {
+    background: rgba(159, 239, 0, 0.08);
+    border-color: rgba(159, 239, 0, 0.2);
+}

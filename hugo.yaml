@@ -1,0 +1,93 @@
+baseURL: "http://localhost:1313/"
+languageCode: "es"
+title: "arx0n"
+theme: "PaperMod"
+
+defaultContentLanguage: es
+defaultContentLanguageInSubdir: true
+
+languages:
+
+  es:
+    languageName: "🇪🇸"
+    languageCode: "es"
+    weight: 1
+
+    params:
+      profileMode:
+        enabled: true
+
+        subtitle: "🕶️ Red Team & Ciberseguridad 💻 Encuentro lo que no debería encontrarse 🔓 Romper. Aprender. Proteger."
+
+        imageUrl: "/images/nifoto.jpeg"
+        imageTitle: "Arx0n"
+        imageWidth: 150
+        imageHeight: 150
+
+        buttons:
+          - name: "Hack The Box"
+            url: "/es/hack-the-box/"
+
+          - name: "TryHackMe"
+            url: "/es/tryhackme/"
+
+          - name: "Recursos"
+            url: "/es/resources/"
+
+          - name: "Sobre mí"
+            url: "/es/about/"
+
+  en:
+    languageName: "🇬🇧"
+    languageCode: "en"
+    weight: 2
+
+    params:
+      profileMode:
+        enabled: true
+
+        subtitle: "🕶️ Red Team & Cybersecurity 💻 I find what shouldn't be found 🔓 Break. Learn. Secure."
+
+        imageUrl: "/images/nifoto.jpeg"
+        imageTitle: "Arx0n"
+        imageWidth: 150
+        imageHeight: 150
+
+        buttons:
+          - name: "Hack The Box"
+            url: "/en/hack-the-box/"
+
+          - name: "TryHackMe"
+            url: "/en/tryhackme/"
+
+          - name: "Resources"
+            url: "/en/resources/"
+
+          - name: "About"
+            url: "/en/about/"
+
+params:
+  env: production
+
+  displayFullLangName: false
+  ShowLanguageSwitcher: true
+
+  disableThemeToggle: true
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/arx0n"
+
+    - name: tiktok
+      url: "https://www.tiktok.com/@arx0n.tiktok"
+
+    - name: instagram
+      url: "https://www.instagram.com/aarxngonzalez"
+
+    - name: youtube
+      url: "https://www.youtube.com/@arx0n_yt"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
