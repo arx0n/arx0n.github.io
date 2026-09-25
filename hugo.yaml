@@ -1,4 +1,4 @@
-baseURL: "http://localhost:1313/"
+baseURL: 'https://arx0n.github.io/'
 languageCode: "es"
 title: "arx0n"
 theme: "PaperMod"
