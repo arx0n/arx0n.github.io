@@ -1,3 +1,7 @@
+---
+layout: "single"
+---
+
 # Hack The Box
 
 My journey through **Hack The Box**, documenting the machines I complete and everything I learn along the way.
