@@ -10,9 +10,5 @@ La idea de esta sección es ir recopilando pequeños proyectos y herramientas qu
 
 ## Herramientas
 
-### CIDrift
-
-Calculadora de subredes IPv4 desarrollada en Bash.
-
 [![Cidrift](/images/RES/cidrift.png) **Cidrift**](/es/resources/cidrift)
 
