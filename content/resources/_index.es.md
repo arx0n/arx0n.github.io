@@ -10,5 +10,5 @@ La idea de esta sección es ir recopilando pequeños proyectos y herramientas qu
 
 ## Herramientas
 
-[![Cidrift](/images/RES/cidrift.png) **Cidrift**](/es/resources/cidrift)
+[![Cidrift](/images/RES/cdriftv1.png) **Cidrift**](/es/resources/cidrift)
 
