@@ -260,30 +260,30 @@ a:hover {
     box-shadow:
         0 8px 25px rgba(0, 0, 0, 0.45);
 }
-
-
 /* =========================================
    CODE
    ========================================= */
 
-code {
+/* Código inline */
+.post-content code:not(pre code) {
     background: #080808;
-
     color: #d6b8ff;
-
     border: 1px solid #21182b;
-
     border-radius: 5px;
 }
 
-pre {
+/* Bloques de código */
+.post-content pre {
     background: #050505 !important;
-
     border: 1px solid #151515;
-
     border-radius: 8px;
 }
 
+.post-content pre code {
+    background: transparent !important;
+    color: #d4d4d4 !important;
+    border: none !important;
+}
 
 /* =========================================
    SELECCIÓN
