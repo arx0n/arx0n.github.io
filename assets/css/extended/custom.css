@@ -295,13 +295,13 @@ pre {
     color: #ffffff;
 }
 
-
 /* =========================================
    SCROLLBAR
    ========================================= */
 
 ::-webkit-scrollbar {
     width: 8px;
+    height: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -310,14 +310,12 @@ pre {
 
 ::-webkit-scrollbar-thumb {
     background: #21182b;
-
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #8b5cf6;
 }
-
 
 /* =========================================
    FOOTER
@@ -830,3 +828,123 @@ details summary:hover {
     background: rgba(159, 239, 0, 0.08);
     border-color: rgba(159, 239, 0, 0.2);
 }
+
+
+
+/* =========================================
+   TRYHACKME — WRITEUP CARDS
+   ========================================= */
+
+.post-content a[href*="/tryhackme/"] {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 320px;
+    margin: 10px 10px 20px 0;
+
+    color: #e8e8e8;
+    text-decoration: none;
+
+    border: 1px solid #2d1b1f;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: #050505;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.post-content a[href*="/tryhackme/"] img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    border-radius: 0;
+}
+
+.post-content a[href*="/tryhackme/"] strong {
+    display: block;
+
+    width: 100%;
+    padding: 10px 0 12px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #d8d8d8;
+}
+
+.post-content a[href*="/tryhackme/"]:hover {
+    color: #ffffff;
+
+    border-color: #ff4655;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 6px rgba(255, 70, 85, 0.35),
+        0 0 16px rgba(255, 70, 85, 0.20),
+        0 0 30px rgba(255, 70, 85, 0.10);
+}
+
+.post-content a[href*="/tryhackme/"]:hover strong {
+    color: #ff4655;
+}
+
+/* =========================================
+   TRYHACKME — CÓDIGO INLINE ROJO
+   ========================================= */
+
+body:has(a[href*="/tryhackme/"]) .post-content code {
+    color: #ff4655;
+}
+
+body:has(a[href*="/tryhackme/"]) .post-content code:not(pre code) {
+    background: rgba(255, 70, 85, 0.08);
+    border-color: rgba(255, 70, 85, 0.2);
+}
+
+/* =========================================
+   TRYHACKME — DESPLEGABLES ROJOS
+   ========================================= */
+
+body:has(a[href*="/tryhackme/"]) .post-content details summary {
+    color: #ff4655;
+}
+
+body:has(a[href*="/tryhackme/"]) .post-content details summary:hover {
+    color: #ff6b78;
+}
+
+/* =========================================
+   WRITEUPS — ZOOM CON DELAY SOLO AL ENTRAR
+   ========================================= */
+
+body:has(a[href*="/hack-the-box/"]) .post-content img,
+body:has(a[href*="/tryhackme/"]) .post-content img {
+    transition: transform 0.35s ease 1s;
+}
+
+body:has(a[href*="/hack-the-box/"]) .post-content img:hover,
+body:has(a[href*="/tryhackme/"]) .post-content img:hover {
+    transform: scale(2);
+    position: relative;
+    z-index: 100;
+
+    transition-delay: 1s;
+}
+
+body:has(a[href*="/hack-the-box/"]) .post-content img:not(:hover),
+body:has(a[href*="/tryhackme/"]) .post-content img:not(:hover) {
+    transition-delay: 0s;
+}
+

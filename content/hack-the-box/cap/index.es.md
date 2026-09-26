@@ -6,6 +6,7 @@
 - **Dificultad:** Fácil
 - **Sistema:** Linux
 - **IP:** `10.129.22.41`
+- **Objetivo:** Descubir la flag del **usuario** y de **root**
 
 ## Reconocimiento
 

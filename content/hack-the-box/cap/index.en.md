@@ -6,6 +6,7 @@
 - **Difficulty:** Easy
 - **System:** Linux
 - **IP:** `10.129.22.41`
+- **Objective:** Discover the **usuario** and **root** flags
 
 ## Reconnaissance
 
