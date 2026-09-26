@@ -926,16 +926,16 @@ body:has(a[href*="/tryhackme/"]) .post-content details summary:hover {
 }
 
 /* =========================================
-   WRITEUPS — ZOOM CON DELAY SOLO AL ENTRAR
+   WRITEUPS — ZOOM SOLO EN IMÁGENES SUELTAS
    ========================================= */
 
-body:has(a[href*="/hack-the-box/"]) .post-content img,
-body:has(a[href*="/tryhackme/"]) .post-content img {
+body:has(a[href*="/hack-the-box/"]) .post-content img:not(a img),
+body:has(a[href*="/tryhackme/"]) .post-content img:not(a img) {
     transition: transform 0.35s ease 1s;
 }
 
-body:has(a[href*="/hack-the-box/"]) .post-content img:hover,
-body:has(a[href*="/tryhackme/"]) .post-content img:hover {
+body:has(a[href*="/hack-the-box/"]) .post-content img:not(a img):hover,
+body:has(a[href*="/tryhackme/"]) .post-content img:not(a img):hover {
     transform: scale(2);
     position: relative;
     z-index: 100;
@@ -943,8 +943,125 @@ body:has(a[href*="/tryhackme/"]) .post-content img:hover {
     transition-delay: 1s;
 }
 
-body:has(a[href*="/hack-the-box/"]) .post-content img:not(:hover),
-body:has(a[href*="/tryhackme/"]) .post-content img:not(:hover) {
+body:has(a[href*="/hack-the-box/"]) .post-content img:not(a img):not(:hover),
+body:has(a[href*="/tryhackme/"]) .post-content img:not(a img):not(:hover) {
     transition-delay: 0s;
+}
+
+/* =========================================
+   RESOURCES — CARDS AZULES
+   ========================================= */
+
+.post-content a[href*="/resources/"] {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 320px;
+    margin: 10px 10px 20px 0;
+
+    color: #e8e8e8;
+    text-decoration: none;
+
+    border: 1px solid #17283a;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: #050505;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* IMAGEN */
+
+.post-content a[href*="/resources/"] img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    border-radius: 0;
+}
+
+
+/* NOMBRE */
+
+.post-content a[href*="/resources/"] strong {
+    display: block;
+
+    width: 100%;
+    padding: 10px 0 12px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #d8d8d8;
+}
+
+
+/* HOVER AZUL */
+
+.post-content a[href*="/resources/"]:hover {
+    color: #ffffff;
+
+    border-color: #2196f3;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 6px rgba(33, 150, 243, 0.35),
+        0 0 16px rgba(33, 150, 243, 0.20),
+        0 0 30px rgba(33, 150, 243, 0.10);
+}
+
+
+.post-content a[href*="/resources/"]:hover strong {
+    color: #2196f3;
+}
+
+
+/* =========================================
+   RESOURCES — IMÁGENES
+   ========================================= */
+
+body:has(a[href*="/resources/"]) .post-content a img {
+    border: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   RESOURCES — CÓDIGO INLINE AZUL
+   ========================================= */
+
+body:has(a[href*="/resources/"]) .post-content code {
+    color: #2196f3;
+}
+
+body:has(a[href*="/resources/"]) .post-content code:not(pre code) {
+    background: rgba(33, 150, 243, 0.08);
+    border-color: rgba(33, 150, 243, 0.20);
+}
+
+
+/* =========================================
+   RESOURCES — DESPLEGABLES AZULES
+   ========================================= */
+
+body:has(a[href*="/resources/"]) .post-content details summary {
+    color: #2196f3;
+}
+
+body:has(a[href*="/resources/"]) .post-content details summary:hover {
+    color: #42a5f5;
 }
 
