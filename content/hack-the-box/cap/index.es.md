@@ -136,4 +136,4 @@ Máquina bastante sencilla en la que hemos conseguido acceso inicial mediante la
 
 ## Comentarios
 
-{{< comments >}}
+{{< comments-es >}}

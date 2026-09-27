@@ -142,4 +142,4 @@ Máquina bastante sencilla, hemos tirado de reconocimiento web básico, hemos us
 
 ## Comentarios
 
-{{< comments >}}
+{{< comments-es >}}

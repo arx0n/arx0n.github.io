@@ -135,3 +135,7 @@ As I mentioned, by importing the **os** library we can execute system-level comm
 ## Conclusion
 
 A fairly straightforward machine where we gained initial access by extracting credentials from a **.pcap** file and subsequently escalated our privileges by taking advantage of a **capability** assigned to `python3.8`.
+
+## Comments
+
+{{< comments >}}
