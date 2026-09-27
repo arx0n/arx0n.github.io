@@ -183,3 +183,7 @@ As you can see, we found all three ingredients through the web, which is not bad
 ![PICKLERICK](/images/THM/PICKLERICK/reto.png) 
 
 The IP address changed because my connection to the machine dropped while I was writing the writeup, so I had to spawn it again.
+
+## Comments
+
+{{< comments-en >}}
