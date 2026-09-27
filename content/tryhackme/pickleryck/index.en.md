@@ -60,6 +60,8 @@ nmap -sCV -p,22,80 10.130.186.22
 - `-sCV` → Runs basic reconnaissance scripts while also detecting the versions of the services running on the specified ports.
 </details>
 
+Since I can't see anything unusual or anything I can take advantage of, let's continue investigating the website.
+
 ## Initial Access
 
 Let's start by checking out the web page and seeing what we can find.

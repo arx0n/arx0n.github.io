@@ -62,6 +62,8 @@ nmap -sCV -p21,22,80 10.129.22.41
 
 </details>
 
+Since I can't see anything unusual or anything I can take advantage of, let's continue investigating the website.
+
 ## Initial Access
 
 Since I don't see anything that particularly catches my attention, I'm going to try connecting via **FTP** using basic credentials such as `admin-admin`, `admin-1234`, etc.

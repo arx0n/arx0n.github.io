@@ -17,7 +17,7 @@ En esta sección iré añadiendo las máquinas que vaya completando.
 Cada writeup recoge el proceso seguido, las técnicas utilizadas, los errores encontrados y los conocimientos que me llevo de cada máquina.
 
 [![Pickle](/images/THM/PICKLERICK/pickle.png) **Writeup - PickleRick**](/es/tryhackme/pickleryck)
-
+[![AgentT](/images/THM/AGENTT/agentt.png) **Writeup - Agent T**](/es/tryhackme/agentt)
 
 ## Qué encontrarás
 

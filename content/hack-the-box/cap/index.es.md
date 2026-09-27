@@ -61,6 +61,8 @@ nmap -sCV -p21,22,80 10.129.22.41
 - `-sCV` → Ejecuta scripts básicos de reconocimiento a la par que detecta las versiones para los puertos que especifiquemos.
 </details>
 
+Como no veo nada extraño ni nada de lo que aprovecharme vamos a continuar investigando la web. 
+
 ## Acceso Inicial
 
 Como no veo nada que me llame en especial la atención, voy a probar a conectarme por **ftp** usando credenciales básicas tipo `admin-admin`, `admin-1234`, etc.
@@ -131,3 +133,4 @@ Como os decía, al importarnos la librería **os** podemos ejecutar comandos a n
 ## Conclusión
 
 Máquina bastante sencilla en la que hemos conseguido acceso inicial mediante la extracción de credenciales de un archivo **.pcap** y posteriormente hemos escalado privilegios aprovechando una **capability** asignada a `python3.8`.
+
