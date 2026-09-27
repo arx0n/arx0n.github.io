@@ -139,3 +139,7 @@ As you can see, it finds a file called `flag.txt` located in the root directory.
 ## Conclusion
 
 Máquina bastante sencilla, hemos tirado de reconocimiento web básico, hemos usado la herramienta `searchsploit` para buscar vulnerabilidades y mediante un programa con `python` hemos entrado por todo lo alto como usuario **root**. 
+
+## Comments
+
+{{< comments >}}

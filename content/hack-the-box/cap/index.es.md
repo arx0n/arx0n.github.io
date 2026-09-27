@@ -134,3 +134,6 @@ Como os decía, al importarnos la librería **os** podemos ejecutar comandos a n
 
 Máquina bastante sencilla en la que hemos conseguido acceso inicial mediante la extracción de credenciales de un archivo **.pcap** y posteriormente hemos escalado privilegios aprovechando una **capability** asignada a `python3.8`.
 
+## Comentarios
+
+{{< comments >}}

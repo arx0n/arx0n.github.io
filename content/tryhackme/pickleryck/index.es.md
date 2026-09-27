@@ -59,6 +59,8 @@ nmap -sCV -p,22,80 10.130.186.22
 - `-sCV` → Ejecuta scripts básicos de reconocimiento a la par que detecta las versiones para los puertos que especifiquemos.
 </details>
 
+Como no veo nada extraño ni nada de lo que aprovecharme vamos a continuar investigando la web. 
+
 ## Acceso Inicial
 
 Vamos a empezar investigando la página web a ver qué nos encontramos.
@@ -180,3 +182,7 @@ Como veis, hemos encontrado los tres ingredientes desde la web, cosa que no est�
 ![PICKLERICK](/images/THM/PICKLERICK/reto.png) 
 
 La IP ha cambiado porque mientras hacía el writeup se me cerró la conexión a la máquina y la tuve que volver a spawnear.
+
+## Comentarios
+
+{{< comments >}}

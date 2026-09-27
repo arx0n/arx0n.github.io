@@ -139,3 +139,7 @@ Como veis nos encuentra un archivo llamado `flag.txt` y se ubica en la raíz, va
 ## Conclusión
 
 Máquina bastante sencilla, hemos tirado de reconocimiento web básico, hemos usado la herramienta `searchsploit` para buscar vulnerabilidades y mediante un programa con `python` hemos entrado por todo lo alto como usuario **root**. 
+
+## Comentarios
+
+{{< comments >}}
