@@ -84,12 +84,6 @@ params:
     - name: tiktok
       url: "https://www.tiktok.com/@arx0n.tiktok"
 
-    - name: instagram
-      url: "https://www.instagram.com/aarxngonzalez"
-
-    - name: youtube
-      url: "https://www.youtube.com/@arx0n_yt"
-
 markup:
   goldmark:
     renderer:
